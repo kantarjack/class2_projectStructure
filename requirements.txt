@@ -1,3 +1,6 @@
 pandas
 dvc
 scikit-learn
+
+# to install in local
+-e .
