@@ -1,6 +1,7 @@
 pandas
 dvc
 scikit-learn
+joblib
 
 # to install in local
 -e .
