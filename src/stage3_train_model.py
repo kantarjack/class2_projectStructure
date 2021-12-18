@@ -39,6 +39,6 @@ def trainModel(config_path,params_path):
 if __name__ == '__main__':
     arg = argparse.ArgumentParser()
     arg.add_argument('--config','-c',default='config/config.yaml')
-    arg.add_argument('--parms','-p',default='params.yaml')
+    arg.add_argument('--params','-p',default='params.yaml')
 args = arg.parse_args()
-trainModel(args.config,args.parms)
+trainModel(args.config,args.params)
