@@ -33,4 +33,13 @@ stages:
       - model_params.ElasticNet.l1_ratio
     outs:
       - artifacts/model_dir/ElasticNet.model
-    
+  stage4_evaluate:
+    cmd: python src/stage4_evaluate.py --config=config/config.yaml --params=params.yaml
+    deps:
+      - artifacts/split_data_dir/test.csv
+      - artifacts/model_dir/ElasticNet.model
+      - src/utils/all_utils.py
+      - config/config.yaml
+      - params.yaml
+    outs:
+      - artifacts/reports_dir/scores    
