@@ -4,11 +4,11 @@ stages:
     cmd: python src/load_save.py --config=config/config.yaml
     deps:
     - path: config/config.yaml
-      md5: a51ac4ae17be13625209dafe64af21d8
-      size: 282
+      md5: 2ad05f03eefbabe15796df65b3cef753
+      size: 344
     - path: src/load_save.py
-      md5: 34a15d83b19ea50199ddbafd8d20c3d9
-      size: 1127
+      md5: 9efeb9cb6e4d03ab28e957a9ac6c1b10
+      size: 1133
     - path: src/utils/all_utils.py
       md5: c5eb45c6b9a8905d9a81662092a060aa
       size: 492
@@ -20,14 +20,14 @@ stages:
     cmd: python src/stage2_train_test_split.py --config=config/config.yaml --params=params.yaml
     deps:
     - path: config/config.yaml
-      md5: a51ac4ae17be13625209dafe64af21d8
-      size: 282
+      md5: 2ad05f03eefbabe15796df65b3cef753
+      size: 344
     - path: params.yaml
-      md5: bc82eb5634fe44daf6d85c57c41b56df
-      size: 43
+      md5: ac0a5530515b8b03a8c148e3b89b0a24
+      size: 110
     - path: src/load_save.py
-      md5: 34a15d83b19ea50199ddbafd8d20c3d9
-      size: 1127
+      md5: 9efeb9cb6e4d03ab28e957a9ac6c1b10
+      size: 1133
     - path: src/utils/all_utils.py
       md5: c5eb45c6b9a8905d9a81662092a060aa
       size: 492

@@ -41,7 +41,4 @@ if __name__ == '__main__':
     arg.add_argument('--config','-c',default='config/config.yaml')
     arg.add_argument('--parms','-p',default='params.yaml')
 args = arg.parse_args()
-print(args)
-print(args.config)
-print(args.parms)
 trainModel(args.config,args.parms)
